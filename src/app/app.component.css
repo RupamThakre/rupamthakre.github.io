@@ -1,0 +1,17 @@
+.navcont{
+    color:white;
+    font-family: Georgia;
+    padding-left: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.padd{
+    padding-top: 40px;
+}
+.cardcont{
+    background-color: white;
+    border: 1px solid black;
+    
+}
+
