@@ -1,3 +1,4 @@
+
 .navcont{
     color:white;
     font-family: Georgia;
@@ -7,11 +8,57 @@
 }
 
 .padd{
-    padding-top: 40px;
+    padding: 40px;      
 }
 .cardcont{
     background-color: white;
-    border: 1px solid black;
+    margin-bottom: 30px;
+    box-shadow: 10px 10px 5px 5px lightblue;
+}
+.imagecenter{
+   height:540px;
+   width: fit-content; 
+}
+
+.topic{
+    box-shadow: 10px 10px 5px 5px lightblue;
+    width: 25%;
+    margin-bottom: 20px;
+}
+.texsiz{
+    font-family: 'Gill Sans';
+    padding-left: 10px;
+    font-weight: bold;
+    padding-top: 5px;
+    font-size: 22px;
+}
+.texsizc{
+    font-family: 'Gill Sans';
+    padding-left: 50px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.texsizcd{
+    font-family: 'Gill Sans';
+    padding-left: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.contentsize{
+    font-family: Georgia;
+    padding-left: 50px;
+    padding-right: 100px;
+    padding-top: 40px;
+    font-weight: 100;
+    font-size: 18px;
     
+}
+.contentsizec{
+    font-family: Georgia;
+    padding-left: 50px;
+    padding-right: 100px;
+    font-weight: 100;
+    font-size: 18px;
+    padding-top: 4px;   
 }
 
