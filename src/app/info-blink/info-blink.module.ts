@@ -7,12 +7,14 @@ import { ToastrModule } from 'ngx-toastr';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { InfoBlinkRoutingModule } from './info-blink-routing.module';
+import { InfoBlinkComponent } from './info-blink.component';
 
 @NgModule({
   declarations: [
     AddStudentComponent,
     EditStudentComponent,
-    StudentListComponent
+    StudentListComponent,
+    InfoBlinkComponent
   ],
   imports: [
     CommonModule,
