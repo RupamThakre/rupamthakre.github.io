@@ -6,11 +6,13 @@ import { InfoBlinkComponent } from './info-blink.component';
 import { StudentListComponent } from './student-list/student-list.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/infoblink', pathMatch: 'full' },
+  { path:'', 
+  component:InfoBlinkComponent,
+  children:[
   { path: 'register-student', component: AddStudentComponent },
   { path: 'view-students', component: StudentListComponent },
-  { path: 'edit-student/:id', component: EditStudentComponent },
-  { path:'infoblink', component:InfoBlinkComponent}
+  { path: 'edit-student/:id', component: EditStudentComponent }
+  ]}
 ];
 
 @NgModule({

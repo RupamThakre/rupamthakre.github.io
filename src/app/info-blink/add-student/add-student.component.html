@@ -1,5 +1,6 @@
-<div class="pt-3 pb-2 mb-3 border-bottom">
-    <h2 class="h2">Add Student</h2>
+
+  <div class="pt-3 pb-2 mb-3 border-bottom">
+    <h2 class="h2 first-text">Add Member</h2>
   </div>
   <form [formGroup]="studentForm" (ngSubmit)="submitStudentData()" novalidate>
     <div class="row">
@@ -73,7 +74,7 @@
             class="btn btn-success"
             [disabled]="!studentForm.valid"
           >
-            Add Student
+            Add Member
           </button>
         </div>
       </div>
