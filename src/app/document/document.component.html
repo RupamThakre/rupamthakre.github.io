@@ -1,0 +1,152 @@
+<div class="container-fluid padd">
+
+    <div class="card topic">
+      <h5 class="texsiz">Problem Statement</h5>
+    </div>
+  
+    <div class="card cardcont">
+        <p class="contentsize">{{PROB_STATEMENT}}</p>
+        <img class="img-responsive imagecenter" src="/assets/infoblink.png" alt="Chania" >
+    </div>
+  
+    <div class="card topic">
+      <h5 class="texsiz">Problem with Team Lead</h5>
+    </div>
+  
+    <div class="card cardcont">
+     <ul>
+      <li *ngFor="let data of LEAD_PROBLEM" class="contentsizec">{{data}}</li>
+     </ul>
+    </div>
+  
+    <div class="card topic">
+      <h5 class="texsiz">Problem with Members</h5>
+    </div>
+  
+    <div class="card cardcont">
+     <ul>
+      <li *ngFor="let data of MEMBER_PROBLEM" class="contentsizec">{{data}}</li>
+     </ul>
+    </div>
+  
+    <div class="card topic">
+      <h5 class="texsiz">Problem Extract</h5>
+    </div>
+  
+    <div class="card cardcont">
+      <p class="contentsize">{{EXTRACT}}</p>
+      <span class="texsizc">Lead can</span>
+      <ul>
+        <li *ngFor="let data of LEAD_CAN" class="contentsizec">{{data}}</li>
+      </ul>
+      <span class="texsizc">Member can</span>
+      <ul>
+        <li *ngFor="let data of MEMBER_CAN" class="contentsizec">{{data}}</li>
+      </ul>
+    </div>
+  
+    <div class="card topic">
+      <h5 class="texsiz">Solution</h5>
+    </div>
+  
+    <div class="card cardcont">
+      <p class="contentsize">{{SOLUTION}}</p>
+      <span class="texsizc">Facilities</span>
+      
+      <div class="row padd">
+        <div class="col-6 ">
+          <div class="card" style="width:400px;">
+            <img class="card-img-top" src="/assets/database.jpg" alt="Card image" width="50" height="200">
+            <div class="card-body">
+              <h4 class="card-title texsizcd" >Storage</h4>
+              <p class="card-text">Reports will be stored in Database</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card" style="width:400px;">
+            <img class="card-img-top" src="/assets/report.png" alt="Card image" width="50" height="200">
+            <div class="card-body">
+              <h4 class="card-title texsizcd">Format</h4>
+              <p class="card-text">Report format will be set by lead</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row padd">
+        <div class="col-6 ">
+          <div class="card" style="width:400px;">
+            <img class="card-img-top" src="/assets/analyse.png" alt="Card image" width="50" height="200">
+            <div class="card-body">
+              <h4 class="card-title texsizcd" >Analyse</h4>
+              <p class="card-text">Review and analyse report anytime</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card" style="width:400px;">
+            <img class="card-img-top" src="/assets/profile.png" alt="Card image" width="50" height="200">
+            <div class="card-body">
+              <h4 class="card-title texsizcd">Profile</h4>
+              <p class="card-text">Member can maintain their profile</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row padd">
+        <div class="col-6 ">
+          <div class="card" style="width:400px;">
+            <img class="card-img-top" src="/assets/workprog.jpg" alt="Card image" width="50" height="200">
+            <div class="card-body">
+              <h4 class="card-title texsizcd" >Work Progress</h4>
+              <p class="card-text">Member working progress can be easily observed</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card" style="width:400px;">
+            <img class="card-img-top" src="/assets/time.png" alt="Card image" width="50" height="200">
+            <div class="card-body">
+              <h4 class="card-title texsizcd">Time & Date</h4>
+              <p class="card-text">Reports will be stored based on time and date</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+  
+    </div>
+    <div class="card topic">
+      <h5 class="texsiz">Development Idea</h5>
+    </div>
+    <div class="card cardcont">
+      <p class="contentsize">{{DEV_IDEA}}</p>
+    </div>
+  
+    <div class="card topic">
+      <h5 class="texsiz">Tools and Technologies</h5>
+    </div>
+    <div class="card cardcont">
+      <span class="texsizc" style="margin-top: 15px;">FrontEnd</span>
+      <ul>
+        <li *ngFor="let data of FRONTEND" class="contentsizec">{{data}}</li>
+      </ul>
+      <span class="texsizc">BackEnd & Database</span>
+      <ul>
+        <li *ngFor="let data of BACKEND" class="contentsizec">{{data}}</li>
+      </ul>
+    </div>
+  
+    <div class="card topic">
+      <h5 class="texsiz">Deployment/Live</h5>
+    </div>
+    <div class="card cardcont">
+      <p class="contentsize">{{DEPLOY}}</p>
+    </div>
+  
+  
+  
+  
+  </div>
