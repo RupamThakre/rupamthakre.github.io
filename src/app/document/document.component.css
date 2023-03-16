@@ -96,22 +96,22 @@
 }
 
 /* unvisited link */
-a:link{
+/* a:link{
     color:red;
 }
 
 /* visited link */
-a:visited{
+/* a:visited{
     color:green;
 }
 
 /* mouse over link */
-a:hover{
+/* a:hover{
     color:red;
     background-color: lightskyblue;
 }
 
 /* selected link */
-a:active{
+/* a:active{
     color:yellow;
-}
+} */ 
