@@ -18,6 +18,7 @@ import { environment } from '../environments/environment';
   declarations: [
     AppComponent,
     DocumentComponent
+   
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-document',
@@ -6,6 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./document.component.css']
 })
 export class DocumentComponent {
+
+  constructor(private router:Router){}
 
   PROB_STATEMENT='Team lead is managing a group of team members. Each members sending a daily status report about the work they did at the end of day. Members are using mail to send report. Team lead needs to review the reports and acknowledge it and sent suggestions';
 
@@ -67,5 +70,15 @@ FRONTEND=['HTML','CSS','Bootstrap','Typescript','Angular framework'];
 BACKEND=['Google Firebase noSql cloud data storage'];
 
 DEPLOY='No any paid services are used for deploying this application. For deploying frontend angular application , we are using Github Pages.. And for Backend apis and database.. we are using google Firebase, its a NoSQL cloud based data storage system';
+
+document = false;
+
+toggleMethod(value:boolean){
+
+  this.document=value;
+  this.router.navigateByUrl('/documentation')
+
+}
+
 
 }

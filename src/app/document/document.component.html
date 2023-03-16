@@ -1,10 +1,14 @@
 <nav class="navbar navbar-dark bg-primary">
-  <h3 class="navcont">InfoBlink Documentation</h3>
+  <h3 class="navcont">Report Mgmt. Project Idea Documentation</h3>
   <button type="button" class="btn btn-light btn-lg" style="margin-right: 120px; color: black;" routerLink="/app">App</button>
 </nav>
 
+<ul class="nav nav-tabs nav-justified">
+  <li class="active topicj card"><a class="texsizr" (click)="toggleMethod(true)">1.Documentation</a></li>
+  <li class="topicj card"><a class="texsizr" (click)="toggleMethod(false)">2. Design and Diagram</a></li>
+</ul>
 
-<div class="container-fluid padd">
+<div *ngIf="document" class="container-fluid padd">
 
     <div class="card topic">
       <h5 class="texsiz">Problem Statement</h5>
@@ -155,4 +159,67 @@
   
   
   
+</div>
+
+<div class="container-fluid padd" *ngIf="!document">
+
+  <div class="card topic">
+    <h5 class="texsiz">Process Flow Diagram</h5>
   </div>
+
+  <div class="card ">
+    <img class="img-responsive adjustImage" src="/assets/swimlame.png" alt="Chania">
+  </div>
+  <hr>
+  <div class="card topic">
+    <h5 class="texsiz">Login Page Flow</h5>
+  </div>
+
+  <div class="card">
+    <img class="img-responsive adjustImageLR" src="/assets/Login.drawio_1.png" alt="Chania">
+  </div>
+  <hr>
+  <div class="card topic">
+    <h5 class="texsiz">Register Page Flow</h5>
+  </div>
+  <div class="card">
+    <img class="img-responsive adjustImageLR" src="/assets/register.drawio.png" alt="Chania">
+  </div>
+  <hr>
+  <div class="card topic">
+    <h5 class="texsiz">Dashboard Page Flow</h5>
+  </div>
+  <div class="card">
+    <img class="img-responsive adjustImageD" src="/assets/Dashboard.drawio.png" alt="Chania">
+  </div>
+  <hr>
+  <div class="card topic">
+    <h5 class="texsiz">Dashboard:Profile Section</h5>
+  </div>
+  <div class="card">
+    <img class="img-responsive adjustImageD" src="/assets/dashview_1.jpg" alt="Chania">
+  </div>
+  <hr>
+  <div class="card topic">
+    <h5 class="texsiz">Dashboard:Report Section</h5>
+  </div>
+  <div class="card">
+    <img class="img-responsive adjustImageD" src="/assets/dashview_2.jpg" alt="Chania">
+  </div>
+  <hr>
+  <div class="card topic">
+    <h5 class="texsiz">Dashboard:Notification Section</h5>
+  </div>
+  <div class="card">
+    <img class="img-responsive adjustImageD" src="/assets/dashview_3.jpg" alt="Chania">
+  </div>
+  <hr>
+  <div class="card topic">
+    <h5 class="texsiz">Dashboard:Lead/Member Section</h5>
+  </div>
+  <div class="card">
+    <img class="img-responsive adjustImageD" src="/assets/dashview.drawio.png" alt="Chania">
+  </div>
+
+
+</div>
