@@ -7,7 +7,7 @@ import { InfoBlinkModule } from './info-blink/info-blink.module';
 const infoModule = () => import('./info-blink/info-blink.module').then(m => m.InfoBlinkModule);
 
 const routes: Routes = [
-  { path: '', redirectTo: '/newdoc', pathMatch: 'full' },
+  { path: '', redirectTo: '/documentation', pathMatch: 'full' },
   { path: 'documentation', component: DocumentComponent },
   { path: 'app', loadChildren : infoModule }
 ];
